@@ -7,7 +7,7 @@ export default function SignupPage() {
   // This component now only provides the visual structure and styling of the signup form.
 
   return (
-    <div className="flex items-center justify-center p-4">
+    <div className="flex items-center justify-center p-10">
       <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md border border-gray-200">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">Create Your Account</h2>
         <form className="space-y-5">

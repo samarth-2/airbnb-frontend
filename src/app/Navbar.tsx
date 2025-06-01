@@ -1,24 +1,18 @@
 'use client';
 
 export default function Navbar()  {
-  // isMenuOpen state and onClick handlers removed for design-only purpose
-  // The mobile menu will always be visible or hidden based on screen size, not toggleable.
-
   return (
-    <nav className="bg-gradient-to-r from-blue-600 to-blue-800 p-4 shadow-lg">
+    <nav className="sticky top-0 bg-gradient-to-r from-blue-600 to-blue-800 p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Brand/Logo */}
         <a href="#" className="text-white text-2xl font-bold rounded-md px-3 py-2 hover:bg-blue-700 transition duration-300">
           MyNextApp
         </a>
 
-        {/* Mobile menu button (static - no functionality) */}
         <div className="md:hidden">
           <button
             className="text-white focus:outline-none focus:ring-2 focus:ring-white rounded-md p-2"
             aria-label="Toggle navigation"
           >
-            {/* Hamburger icon always visible for mobile design */}
             <svg
               className="w-6 h-6"
               fill="none"
@@ -36,7 +30,6 @@ export default function Navbar()  {
           </button>
         </div>
 
-        {/* Desktop navigation links */}
         <div className="hidden md:flex space-x-4">
           <a
             href="#"
@@ -65,8 +58,6 @@ export default function Navbar()  {
         </div>
       </div>
 
-      {/* Mobile menu (always visible for design demonstration on smaller screens, no toggle) */}
-      {/* In a real app, this would be conditionally rendered based on state */}
       <div className="md:hidden mt-2 space-y-2 bg-blue-700 p-4 rounded-b-lg shadow-inner">
         <a
           href="#"
